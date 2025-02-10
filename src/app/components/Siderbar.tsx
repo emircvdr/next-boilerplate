@@ -62,7 +62,9 @@ function MenuItem({ item, setSelectedMenu, selectedMenu }: any) {
 
 function RightPanel({ selectedMenu, setSelectedMenu }: any) {
     return (
-        <div className="w-64 h-full bg-white border-l border-r transition-all">
+        <div
+            className="w-64 h-full bg-white border-l border-r transition-all duration-300 ease-in-out transform translate-x-0 opacity-100"
+        >
             <div className="w-full h-[73px] border-b flex items-center justify-start p-2">
                 <h1>{selectedMenu.name}</h1>
             </div>
