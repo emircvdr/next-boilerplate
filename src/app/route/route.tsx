@@ -11,7 +11,20 @@ export const menuItems = [
     children: [
       {
         name: "Dashboard",
-        url: "/dashboard",
+        children: [
+          {
+            name: "test1",
+            url: "/about",
+          },
+          {
+            name: "test2",
+            url: "/about",
+          },
+          {
+            name: "test3",
+            url: "/about",
+          },
+        ]
       },
       {
         name: "Analytics",
@@ -30,23 +43,34 @@ export const menuItems = [
     icon: <BiMoney size={22} />,
   },
   {
-    name: "Analytics",
+    name: "Test1",
     url: "/about",
     icon: <BiUser size={22} />,
   },
   {
-    name: "Analytics",
+    name: "Test2",
     url: "/about",
     icon: <CgCheck size={22} />,
   },
   {
-    name: "Analytics",
+    name: "Test3",
     url: "/about",
     icon: <BiPhone size={22} />,
   },
   {
-    name: "Analytics",
+    name: "Test4",
     url: "/about",
     icon: <CgCalendar size={22} />,
+    children: [
+      {
+        name: "deneme1",
+        children: [
+          {
+            name: "deneme1Test1",
+            url: "/about",
+          }
+        ]
+      }
+    ]
   },
 ];
